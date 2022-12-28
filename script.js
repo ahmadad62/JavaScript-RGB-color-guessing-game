@@ -52,7 +52,7 @@ container.addEventListener('click', (e) => {
         return reset()
     }
     if (life > 1) {
-        e.target.style.opacity = 0;
+        e.target.style.visibility = 'hidden';
         life -= 1;
         alert(`you have now ${life} life`)
     } else {

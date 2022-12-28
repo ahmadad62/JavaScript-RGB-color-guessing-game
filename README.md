@@ -3,11 +3,8 @@
 
 ![JavaScript RGB color guessing game](./image/JavaScript-RGB-color-guessing-game.png)
 
-Coding a color guessing game with JavaScript is quite straightforward:
+This code generates an array of six random RGB colors and assigns them to the background color of six HTML elements with the class "square". It also randomly selects one of the colors and displays it in an HTML element with the id "color-display".
 
-1.  You build a game where the player will see a single RGB value for a color.
-2.  The player has to click on a color they think matches the RGB value displayed.
+When the user clicks on one of the square elements, the code compares the background color of the clicked element to the selected color. If the colors match, an alert message is displayed and the game is reset. If the colors do not match, the visibility of the clicked element is set to hidden and the user's remaining "life" is decremented by one. If the user's life reaches 0, another alert message is displayed and the game is reset.
 
-You can easily add more features to the game to make it more difficult.
-
-For example, you could limit the number of guesses or give the player three “lives”. With every wrong guess, they would lose one, and the game would be over when they run out of lives.
+The code also includes an event listener for the "load" event on the window object, which displays an alert message when the page finishes loading.
